@@ -230,8 +230,8 @@ projects[dynamo][download][revision] = "v2.2.0"
 
 projects[alma][type] = "module"
 projects[alma][download][type] = "git"
-projects[alma][download][url] = "https://github.com/dingproject/alma.git"
-projects[alma][download][revision] = "v1.6.0"
+; Vejlebib uses own version of the ALMA module - (and it has no revision data?)
+projects[alma][download][url] = "https://github.com/vejlebib/alma.git"
 
 projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
