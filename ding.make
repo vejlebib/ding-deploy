@@ -280,3 +280,35 @@ libraries[tinymce][download][url] = "https://github.com/downloads/tinymce/tinymc
 libraries[tinymce][directory_name] = "tinymce"
 libraries[tinymce][destination] = "libraries"
 
+; Theme and modules for Vejle Bibliotekernes implementation of ding
+
+projects[wellejus][type] = "theme"
+projects[wellejus][download][type] = "git"
+projects[wellejus][download][url] = "https://github.com/vejlebib/wellejus.git"
+
+projects[ding_tabroll][type] = "module"
+projects[ding_tabroll][download][type] = "git"
+projects[ding_tabroll][download][url] = "https://github.com/vejlebib/ding_tabroll.git"
+
+projects[ding_place2book][type] = "module"
+projects[ding_place2book][download][type] = "git"
+projects[ding_place2book][download][url] = "https://github.com/vejlebib/ding_place2book.git"
+
+projects[node_clone][subdir] = "contrib"
+projects[node_clone][version] = "1.3"
+
+projects[scheduler][subdir] = "contrib"
+projects[scheduler][version] = "1.8"
+
+projects[themekey][subdir] = "contrib"
+projects[themekey][version] = "4.0"
+
+projects[themekey_properties][subdir] = "contrib"
+projects[themekey_properties][version] = "3.0"
+
+projects[mailchimp][subdir] = "contrib"
+projects[mailchimp][version] = "2.6"
+
+projects[vejlebib-modules][type] = "module"
+projects[vejlebib-modules][download][type] = "git"
+projects[vejlebib-modules][download][url] = "https://github.com/vejlebib/vejlebib-modules.git"
