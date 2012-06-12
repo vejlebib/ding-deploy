@@ -299,6 +299,7 @@ projects[ding_tabroll][download][url] = "https://github.com/vejlebib/ding_tabrol
 projects[ding_place2book][type] = "module"
 projects[ding_place2book][download][type] = "git"
 projects[ding_place2book][download][url] = "https://github.com/vejlebib/ding_place2book.git"
+projects[ding_place2book][download][revision] = "v1.0.3"
 
 projects[node_clone][subdir] = "contrib"
 projects[node_clone][version] = "1.3"
