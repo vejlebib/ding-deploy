@@ -147,9 +147,6 @@ projects[office_hours][download][type] = "git"
 projects[office_hours][download][url] = "https://github.com/dingproject/drupal-office_hours.git"
 projects[office_hours][download][revision] = "6.x-2.0-unofficial10"
 
-projects[opening_hours][subdir] = contrib
-projects[opening_hours][version] = 1.0-beta3
-
 projects[openlayers][subdir] = contrib
 projects[openlayers][version] = 2.0-beta1
 
@@ -193,9 +190,6 @@ projects[tagadelic][version] = "1.3"
 
 projects[term_node_count][subdir] = "contrib"
 projects[term_node_count][version] = "1.3"
-
-projects[tipsy][subdir] = contrib
-projects[tipsy][version] = 1.1
 
 projects[token][subdir] = contrib
 projects[token][version] = 1.16
@@ -299,7 +293,6 @@ projects[ding_tabroll][download][url] = "https://github.com/vejlebib/ding_tabrol
 projects[ding_place2book][type] = "module"
 projects[ding_place2book][download][type] = "git"
 projects[ding_place2book][download][url] = "https://github.com/vejlebib/ding_place2book.git"
-projects[ding_place2book][download][revision] = "v1.0.3"
 
 projects[node_clone][subdir] = "contrib"
 projects[node_clone][version] = "1.3"
