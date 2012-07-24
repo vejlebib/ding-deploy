@@ -216,6 +216,12 @@ projects[views][version] = "2.16"
 projects[views_bulk_operations][subdir] = "contrib"
 projects[views_bulk_operations][version] = "1.13"
 
+projects[views_customfield][subdir] = "contrib"
+projects[views_customfield][version] = "1.0"
+
+projects[views_rss][subdir] = "contrib"
+projects[views_rss][version] = "2.x-dev"
+
 projects[webform][subdir] = contrib
 projects[webform][version] = 3.17
 
@@ -263,11 +269,6 @@ projects[ding_mobile][download][type] = "git"
 projects[ding_mobile][download][url] = "https://github.com/dingproject/ding-mobile.git"
 projects[ding_mobile][download][revision] = "v1.1.0-rc1"
 
-projects[ding_redia_feed][type] = "module"
-projects[ding_redia_feed][download][type] = "git"
-projects[ding_redia_feed][download][url] = "https://github.com/dingproject/ding_redia_feed.git"
-projects[ding_redia_feed][download][revision] = "v1.1.0-rc1"
-
 projects[ding_tema_sites][type] = module
 projects[ding_tema_sites][download][type] = git
 projects[ding_tema_sites][download][url] = https://github.com/dingproject/ding_tema_sites.git
@@ -313,6 +314,10 @@ projects[wellejus][download][url] = "https://github.com/vejlebib/wellejus.git"
 projects[ding_tabroll][type] = "module"
 projects[ding_tabroll][download][type] = "git"
 projects[ding_tabroll][download][url] = "https://github.com/vejlebib/ding_tabroll.git"
+
+projects[ding_redia_bapp][type] = "module"
+projects[ding_redia_bapp][download][type] = "git"
+projects[ding_redia_bapp][download][url] = "https://github.com/vejlebib/ding_redia_bapp.git"
 
 projects[ding_place2book][type] = "module"
 projects[ding_place2book][download][type] = "git"
