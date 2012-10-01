@@ -116,7 +116,7 @@ projects[jquery_ui][subdir] = "contrib"
 projects[jquery_ui][version] = "1.5"
 
 projects[jquery_update][subdir] = "contrib"
-projects[jquery_update][version] = "1.1"
+projects[jquery_update][version] = "2.0-alpha1"
 
 projects[link][subdir] = "contrib"
 projects[link][version] = "2.9"
