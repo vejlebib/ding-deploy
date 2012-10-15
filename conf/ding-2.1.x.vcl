@@ -88,13 +88,33 @@ sub vcl_recv {
     return (pass);
   }
 
-  # Reduce the number of User Agent variants so caching will work better
-  if (req.http.user-agent ~ "(?i)ipod|iphone|android|opera mini|blackberry|up.browser|up.link|mmp|symbian|smartphone|midp|wap|vodafone|o2|pocket|kindle|mobile|pda|psp|treo"){
-    set req.http.user-agent="iPhone";
-  } else if (req.http.user-agent ~ "MSIE") {
-    set req.http.user-agent = "MSIE";
-  } else {
-    set req.http.user-agent = "Mozilla";
+  # Sort clients in 3 caching buckets:
+  # "Mobile": Mobile phones
+  # "iPad": Tablets.
+  # "Desktop": Everything else.
+  # The naming of the groups has been seleted to match strings that
+  # mobile_tools triggers on
+  if (req.http.user-agent ~ "iPad") {
+    set req.http.user-agent = "iPad";
+  } else if (req.http.user-agent ~ "Tablet") {
+    set req.http.user-agent = "iPad";
+  } else if (req.http.user-agent ~ "Android") {
+    if (req.http.user-agent ~ "Mobile") {
+      set req.http.user-agent = "Mobile";
+    } else {
+      # Opera Mobile is an odd case, it adds Tablet to the string on tablets
+      # (that's caught above), but not "Mobile" normally.
+      if (req.http.user-agent ~ "Opera Mobi") {
+        set req.http.user-agent = "Mobile";
+      } else {
+        set req.http.user-agent = "iPad";
+      }
+    }
+  } else if (req.http.user-agent ~ "(?i)ipod|iphone|opera mini|opera mobi|blackberry|up.browser|up.link|mmp|symbian|smartphone|midp|wap|vodafone|o2|pocket|kindle|mobile|pda|psp|treo") {
+    # "opera mobi" isn't a typo, Opera Mobile calls itself that.
+    set req.http.user-agent = "Mobile";
+  } else  {
+    set req.http.user-agent = "Desktop";
   }
 
   remove req.http.X-Forwarded-For;
@@ -151,7 +171,7 @@ sub vcl_recv {
   if (req.http.Cookie) {
     set req.http.Cookie = ";" req.http.Cookie;
     set req.http.Cookie = regsuball(req.http.Cookie, "; +", ";");
-    set req.http.Cookie = regsuball(req.http.Cookie, ";(SESS[a-z0-9]+|NO_CACHE)=", "; \1=");
+    set req.http.Cookie = regsuball(req.http.Cookie, ";(SESS[a-z0-9]+|NO_CACHE|mt_device)=", "; \1=");
     set req.http.Cookie = regsuball(req.http.Cookie, ";[^ ][^;]*", "");
     set req.http.Cookie = regsuball(req.http.Cookie, "^[; ]+|[; ]+$", "");
 
@@ -177,6 +197,9 @@ sub vcl_hash {
   # if (req.http.Cookie) {
   #   set req.hash += req.http.Cookie;
   # }
+
+  # Include user agent in hash so mobile/tablet/desktop get their own bins.
+  set req.hash += req.http.User-Agent;
 }
 
 # Code determining what to do when serving items from the Apache servers.
@@ -186,6 +209,9 @@ sub vcl_fetch {
     # beresp == Back-end response from the web server.
     unset beresp.http.set-cookie;
   }
+
+  # Add an header describing which cache bin we're using.
+  set beresp.http.X-Varnish-UA-bin = req.http.user-agent;
 
   # Allow items to be stale if needed.
   set beresp.grace = 6h;
