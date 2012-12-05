@@ -274,6 +274,11 @@ projects[ding_tema_sites][download][type] = git
 projects[ding_tema_sites][download][url] = https://github.com/dingproject/ding_tema_sites.git
 projects[ding_tema_sites][download][revision] = "v1.8.0-rc2"
 
+projects[ding_wayf][type] = module
+projects[ding_wayf][download][type] = git
+projects[ding_wayf][download][url] = https://github.com/dingproject/ding_wayf.git
+projects[ding_wayf][download][revision] = "v1.0-beta4"
+
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
