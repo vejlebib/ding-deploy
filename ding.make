@@ -49,6 +49,9 @@ projects[comment_notify][version] = "1.6"
 projects[content_profile][subdir] = "contrib"
 projects[content_profile][version] = "1.0"
 
+projects[eu-cookie-compliance][subdir] = "contrib"
+projects[eu-cookie-compliance][version] = "1.8"
+
 projects[ctm][subdir] = contrib
 projects[ctm][version] = 1.1
 
