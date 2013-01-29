@@ -252,6 +252,11 @@ projects[alma][download][type] = "git"
 ; Vejlebib uses own version of the ALMA module - (and it has no revision data?)
 projects[alma][download][url] = "https://github.com/vejlebib/alma.git"
 
+projects[finurlig_widget][type] = "module"
+projects[finurlig_widget][download][type] = "git"
+projects[finurlig_widget][download][url] = "https://github.com/aakb/finurlig_widget"
+projects[finurlig_widget][download][revision] = "6.x-1.5"
+
 projects[openruth][type] = "module"
 projects[openruth][download][type] = "git"
 projects[openruth][download][url] = "https://github.com/dingproject/openruth.git"
