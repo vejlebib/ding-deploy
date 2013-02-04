@@ -336,9 +336,9 @@ projects[ding_place2book][type] = "module"
 projects[ding_place2book][download][type] = "git"
 projects[ding_place2book][download][url] = "https://github.com/vejlebib/ding_place2book.git"
 
-projects[ding_place2book][type] = "module"
-projects[ding_place2book][download][type] = "git"
-projects[ding_place2book][download][url] = "https://github.com/vejlebib/ding_wagnerguide.git"
+projects[ding_wagnerguide][type] = "module"
+projects[ding_wagnerguide][download][type] = "git"
+projects[ding_wagnerguide][download][url] = "https://github.com/vejlebib/ding_wagnerguide.git"
 
 projects[node_clone][subdir] = "contrib"
 projects[node_clone][version] = "1.3"
