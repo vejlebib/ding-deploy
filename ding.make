@@ -292,11 +292,6 @@ projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
 projects[ting][download][revision] = "v1.8.0"
 
-projects[trampoline][type] = "module"
-projects[trampoline][download][type] = "git"
-projects[trampoline][download][url] = "https://github.com/dingproject/trampoline.git"
-projects[trampoline][download][revision] = "v1.3.1"
-
 projects[webtrends][type] = "module"
 projects[webtrends][download][type] = "git"
 projects[webtrends][download][url] = "https://github.com/dingproject/webtrends.git"
