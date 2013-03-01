@@ -265,22 +265,22 @@ projects[openruth][download][revision] = "v1.0.9"
 projects[ding][type] = "module"
 projects[ding][download][type] = "git"
 projects[ding][download][url] = "https://github.com/dingproject/ding.git"
-projects[ding][download][revision] = "v1.8.0-rc2"
+projects[ding][download][revision] = "v1.8.0"
 
 projects[ding_campaign][type] = "module"
 projects[ding_campaign][download][type] = "git"
 projects[ding_campaign][download][url] = "https://github.com/dingproject/ding-campaign.git"
-projects[ding_campaign][download][revision] = "v1.5.0-rc2"
+projects[ding_campaign][download][revision] = "v1.5.0"
 
 projects[ding_mobile][type] = "module"
 projects[ding_mobile][download][type] = "git"
 projects[ding_mobile][download][url] = "https://github.com/dingproject/ding-mobile.git"
-projects[ding_mobile][download][revision] = "v1.1.0-rc1"
+projects[ding_mobile][download][revision] = "v1.1.0"
 
 projects[ding_tema_sites][type] = module
 projects[ding_tema_sites][download][type] = git
 projects[ding_tema_sites][download][url] = https://github.com/dingproject/ding_tema_sites.git
-projects[ding_tema_sites][download][revision] = "v1.8.0-rc2"
+projects[ding_tema_sites][download][revision] = "v1.8.0"
 
 projects[ding_wayf][type] = module
 projects[ding_wayf][download][type] = git
@@ -290,7 +290,7 @@ projects[ding_wayf][download][revision] = "v1.0-beta4"
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
 projects[ting][download][url] = "https://github.com/dingproject/ting.git"
-projects[ting][download][revision] = "v1.8.0-rc2"
+projects[ting][download][revision] = "v1.8.0"
 
 projects[trampoline][type] = "module"
 projects[trampoline][download][type] = "git"
@@ -306,7 +306,7 @@ projects[webtrends][download][revision] = "v1.1.2"
 libraries[ting-client][destination] = "modules/ting/lib"
 libraries[ting-client][download][type] = "git"
 libraries[ting-client][download][url] = "https://github.com/dingproject/ting-client.git"
-libraries[ting-client][download][revision] = "v1.2.0"
+libraries[ting-client][download][revision] = "v1.2.1"
 
 libraries[jquery_ui][download][type] = "get"
 libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip"
