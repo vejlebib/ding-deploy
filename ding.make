@@ -330,6 +330,7 @@ projects[ding_redia_bapp][download][url] = "https://github.com/vejlebib/ding_red
 projects[ding_place2book][type] = "module"
 projects[ding_place2book][download][type] = "git"
 projects[ding_place2book][download][url] = "https://github.com/vejlebib/ding_place2book.git"
+projects[ding_place2book][download][revision] = "v1.1.0"
 
 projects[ding_wagnerguide][type] = "module"
 projects[ding_wagnerguide][download][type] = "git"
