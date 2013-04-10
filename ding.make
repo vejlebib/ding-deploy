@@ -336,6 +336,11 @@ projects[ding_wagnerguide][type] = "module"
 projects[ding_wagnerguide][download][type] = "git"
 projects[ding_wagnerguide][download][url] = "https://github.com/vejlebib/ding_wagnerguide.git"
 
+projects[ding_zerohit_form][type] = "module"
+projects[ding_zerohit_form][download][type] = "git"
+projects[ding_zerohit_form][download][url] = "https://github.com/vejlebib/ding_zerohit_form.git"
+projects[ding_zerohit_form][download][revision] = "6.x-1.0"
+
 projects[node_clone][subdir] = "contrib"
 projects[node_clone][version] = "1.3"
 
